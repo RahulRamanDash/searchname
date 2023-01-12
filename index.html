@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Search utility for IppSec's YouTube videos">
+	<meta name="keywords" content="ippsec, hacking, pentesting, hackthebox, htb">
+	<meta name="author" content="IppSec">
+
+	<link rel="stylesheet" href="style.css">
+
+	<title>WebSearch</title>
+</head>
+<body id="color-no-search">		
+	<div class="container">
+		
+		<div class="search">
+			<div class="header">
+				<h1>Welcome</h1>
+			</div>
+		
+			<div class="query">
+				<form class="searchForm" action="#">
+					<input type="text" id="name" placeholder="ENTER YOUR NAME" autofocus>
+				    <button type="button" class="custom-button" onclick="showName()">Submit</button>
+        </form>
+			</div>
+				<br>
+				<div id="output">
+					<h1></h1>
+				</div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  function showName() {
+    var name = document.getElementById("name").value;
+	if (name == "") {
+    // Display an error message
+    var output = "Error: Input field is empty.";
+    document.getElementById("output").innerHTML = output;
+	document.getElementById("color-no-search").style.backgroundColor = "#fa5e3d";
+  } else if (name == "rahul"){
+	document.getElementById("output").innerHTML = "Hello " + name +","+ " " +"You are a Chutiya";
+	document.getElementById("color-no-search").style.backgroundColor = "blue";   
+    }else{
+	document.getElementById("output").innerHTML = "Hello " + name +","+ " " +"You are a Chutiya";
+	document.getElementById("color-no-search").style.backgroundColor = "#108000";  
+	}
+}
+
+</script>
