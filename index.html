@@ -38,18 +38,15 @@
 <script>
   function showName() {
     var inname = document.getElementById("name").value;
-	  var name = inname.toLowerCase();
+	var name = inname.toLowerCase();
 	if (name == "") {
-    // Display an error message
-    var output = "Error: Input field is empty.";
-    document.getElementById("output").innerHTML = output;
-	document.getElementById("color-no-search").style.backgroundColor = "#fa5e3d";
-  } else if (name == "rahul" || name == "Rahul" || name == "Rahul Raman" || name == "Rahul Raman Dash"){
-	document.getElementById("output").innerHTML = "Hello " + name +","+ " " + "Happy to see you.";
-	document.getElementById("color-no-search").style.backgroundColor = "blue";   
-    }else{
-	document.getElementById("output").innerHTML = "Hello " + name +","+ " " +"You are a Chutiya.";
-	document.getElementById("color-no-search").style.backgroundColor = "#108000";  
+    		// Display an error message
+    		var output = "Error: Input field is empty.";
+    		document.getElementById("output").innerHTML = output;
+		document.getElementById("color-no-search").style.backgroundColor = "#fa5e3d";
+  	}else{
+		document.getElementById("output").innerHTML = "Hello " + name +","+ " " + "Happy to see you.";
+		document.getElementById("color-no-search").style.backgroundColor = "blue";   
 	}
 }
 
