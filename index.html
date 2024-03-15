@@ -44,9 +44,15 @@
     		var output = "Error: Input field is empty.";
     		document.getElementById("output").innerHTML = output;
 		document.getElementById("color-no-search").style.backgroundColor = "#fa5e3d";
-  	}else{
+  	}else if(name.toLowerCase == "rahul" || name.toLowerCase == "ayush" || name.includes() == "rahul" || name.includes() == "ayush"){
 		document.getElementById("output").innerHTML = "Hello " + name;
 		document.getElementById("color-no-search").style.backgroundColor = "blue";   
+	 }
+	
+	
+	else{
+		document.getElementById("output").innerHTML = "Hello " + name + "You are a Chutiya.";
+		document.getElementById("color-no-search").style.backgroundColor = "red";   
 	}
 }
 
